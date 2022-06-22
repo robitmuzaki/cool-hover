@@ -121,3 +121,9 @@ a.hover5:hover::before {
     transform-origin: left;
     transform: scaleX(1);
 }
+.github-fork {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
