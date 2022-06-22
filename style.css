@@ -1,0 +1,123 @@
+body {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #222;
+
+}
+h1 {
+    color: #CD2DD2;
+}
+h2 {
+    margin-bottom: 50px;
+}
+p {
+    margin-bottom: 30px;
+}
+a {
+    color: #CD2DD2;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+a.hover1 {
+    color: #222;
+    position: relative;
+}
+a.hover1::before {
+    content: "";
+    position: absolute;
+    height: 9px;
+    width: 100%;
+    left: 0;
+    bottom: 3px;
+    z-index: -1;
+    background: #CD2DD2;
+    transition: all 0.3s ease-in-out;
+}
+a.hover1:hover::before {
+    bottom: 0;
+    height: 100%;
+}
+a.hover2 {
+    box-shadow: inset 0 0 0 0 #CD2DD2;
+    transition: all 0.3s ease-in-out;
+    padding: 0 20px;
+}
+a.hover2:hover {
+    box-shadow: inset 150px 0 0 0 #CD2DD2;
+    color: #fff;
+}
+a.hover3 {
+    background-image: linear-gradient(to right, #CD2DD2, #CD2DD2 50%, #000 50%);
+    background-size: 200% 100%;
+    background-position: -100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+a.hover3:before {
+    content: "";
+    background: #CD2DD2;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+    
+
+}
+a.hover3:hover {
+    background-position: 0;
+}
+a.hover3:hover::before {
+    width: 100%;
+}
+a.hover4 {
+    color: #222;
+    text-decoration: none;
+    background:
+    linear-gradient(
+      to right,
+      #CD2DD2,
+      #CD2DD2
+    ),
+    linear-gradient(
+      to right,
+      red,
+      green,
+      blue
+  );
+  background-size: 100% 3px, 0 3px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+}
+a.hover4:hover {
+    background-size: 0 3px, 100% 3px;
+}
+a.hover5 {
+    position: relative;
+    color: #222;
+}
+a.hover5::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #222;
+    bottom: -2px;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+a.hover5:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
